@@ -29,6 +29,12 @@ function destructivelyRemoveFirstKitten() {
 function appendKitten(name) {
   // preserve the underlying array by creating a new array.
   // add a new kitten to the new array and return it.
+  // Use spread operator here--> ...kittens
   var newlyAppendedkittensArray = [...kittens, name];
   return newlyAppendedkittensArray;
+}
+
+function prependKitten(name) {
+  var newlyPrependedKittensArray = [name, ...kittens];
+  return newlyPrependedKittensArray;
 }
