@@ -38,3 +38,8 @@ function prependKitten(name) {
   var newlyPrependedKittensArray = [name, ...kittens];
   return newlyPrependedKittensArray;
 }
+
+function removeLastKitten() {
+  var removedLastKittenArray = kittens.pop();
+  return removeLastKittenArray;
+}
