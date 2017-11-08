@@ -29,6 +29,7 @@ function destructivelyRemoveFirstKitten() {
 function appendKitten(name) {
   // preserve the underlying array by creating a new array.
   // add a new kitten to the new array and return it.
-  var newlyAppendedkittenArray = kittens.push(name);
-  return newlyAppendedkittenArray;
+  var newlyAppendedkittensArray = kittens[];
+  newlyAppendedkittensArray = newlyAppendedkittensArray.push(name);
+  return newlyAppendedkittensArray;
 }
