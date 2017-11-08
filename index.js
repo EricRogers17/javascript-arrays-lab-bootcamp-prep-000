@@ -20,3 +20,10 @@ function destructivelyRemoveLastKitten() {
   kittens.pop(name);
   return kittens;
 }
+
+function appendKitten(name) {
+  // preserve the underlying array by creating a new array.
+  // add a new kitten to the new array and return it.
+  var newlyAppendedkittenArray = kitten.push(name);
+  return newlyAppendedkittenArray;
+}
