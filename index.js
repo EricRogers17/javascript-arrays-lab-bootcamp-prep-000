@@ -12,3 +12,11 @@ function destructivelyPrependKitten(name) {
   kittens.unshift(name);
   return kittens;
 }
+
+function destructivelyRemoveLastKitten() {
+  // effect the underlying kittens array and remove
+  // the last kitten
+  // the returning array should only have Milo and Otis
+  kittens.pop(name);
+  return kittens;
+}
