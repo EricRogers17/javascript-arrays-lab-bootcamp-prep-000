@@ -35,11 +35,16 @@ function appendKitten(name) {
 }
 
 function prependKitten(name) {
-  var newlyPrependedKittensArray = [name, ...kittens];
-  return newlyPrependedKittensArray;
+  var newlyPrependedKittenArray = [name, ...kittens];
+  return newlyPrependedKittenArray;
 }
 
 function removeLastKitten() {
   var removedLastKittenArray = kittens.slice(0, kittens.length - 1);
   return removedLastKittenArray;
+}
+
+function removeFirstKitten() {
+  var removedFirstKittenArray = kittens.slice(1);
+  return removedFirstKittenArray;
 }
